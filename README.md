@@ -1,10 +1,14 @@
-# 📚 Diagana School - Test Interface Mobile-First
+# 📚 École Cheikh Ahmed Tijane (C.A.T) - Test Interface Mobile-First
 
-Interface de test pour la plateforme éducative **Diagana School** avec design mobile-first inspiré d'Anthropic.
+Interface de test pour la plateforme éducative **École Cheikh Ahmed Tijane** avec design mobile-first inspiré d'Anthropic.
+
+## 📂 Informations du Projet
+
+• **URL du dépôt** : https://github.com/ASD25042003/test-C.A.T.git
 
 ## 🚀 Démo Live
 
-**[https://asd25042003.github.io/test-DS/](https://asd25042003.github.io/test-DS/)**
+**[https://asd25042003.github.io/test-C.A.T/](https://asd25042003.github.io/test-C.A.T/)**
 
 ## 🎯 Pages Disponibles
 
@@ -63,11 +67,11 @@ Interface de test pour la plateforme éducative **Diagana School** avec design m
 
 ## 📋 Instructions
 
-1. **Accès** : [https://asd25042003.github.io/test-DS/](https://asd25042003.github.io/test-DS/)
+1. **Accès** : [https://asd25042003.github.io/test-C.A.T/](https://asd25042003.github.io/test-C.A.T/)
 2. **Login** : N'importe quelles informations
 3. **Navigation** : Tester tous les liens
 4. **Mobile** : Réduire la fenêtre pour tester
 
 ---
 
-**Test Interface pour Diagana School** - Déployé avec ❤️ sur GitHub Pages
+**Test Interface pour École Cheikh Ahmed Tijane** - Déployé avec ❤️ sur GitHub Pages
