@@ -83,15 +83,30 @@
         }
 
         .filter-pill {
-            padding: 0.5rem 1rem;
+            padding: 0.4rem 0.8rem;
             background: var(--color-beige-200);
             border: 1px solid var(--color-beige-300);
             border-radius: 20px;
-            font-size: 0.875rem;
+            font-size: 0.8rem;
             font-weight: 500;
             color: var(--color-gray-700);
             cursor: pointer;
             transition: all 0.2s ease;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .filters-container {
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            display: flex;
+            gap: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .filters-container::-webkit-scrollbar {
+            display: none;
         }
 
         .filter-pill:hover,
@@ -524,17 +539,13 @@
                 </div>
             </div>
 
-            <!-- Filtres par type -->
-            <div class="flex flex-wrap gap-2 mb-4">
+            <!-- Filtres en défilement horizontal -->
+            <div class="filters-container mb-4">
                 <div class="filter-pill active" onclick="filterBy('all')">📋 Tout</div>
                 <div class="filter-pill" onclick="filterBy('document')">📄 Documents</div>
                 <div class="filter-pill" onclick="filterBy('image')">🖼️ Images</div>
                 <div class="filter-pill" onclick="filterBy('video')">🎥 Vidéos</div>
                 <div class="filter-pill" onclick="filterBy('link')">🔗 Liens</div>
-            </div>
-
-            <!-- Filtres par matière -->
-            <div class="flex flex-wrap gap-2">
                 <div class="filter-pill" onclick="filterBySubject('mathematiques')">📐 Mathématiques</div>
                 <div class="filter-pill" onclick="filterBySubject('sciences')">🔬 Sciences</div>
                 <div class="filter-pill" onclick="filterBySubject('francais')">📚 Français</div>
@@ -545,13 +556,13 @@
 
         <!-- Résultats et stats -->
         <div class="flex justify-between items-center mb-6 animate-fade-in">
-            <div style="color: var(--color-gray-500);">
+            <div style="color: var(--color-gray-500); font-size: 0.875rem;">
                 <span id="results-count">127</span> ressources trouvées
             </div>
-            <div class="flex items-center space-x-4 text-sm" style="color: var(--color-gray-500);">
-                <span>👁 12,354 vues totales</span>
-                <span>👍 2,891 likes</span>
-                <span>💬 634 commentaires</span>
+            <div class="flex items-center space-x-3 text-xs" style="color: var(--color-gray-500);">
+                <span>👁 12,354</span>
+                <span>👍 2,891</span>
+                <span>💬 634</span>
             </div>
         </div>
 
