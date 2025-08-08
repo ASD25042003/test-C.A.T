@@ -176,15 +176,30 @@
         }
 
         .tab-button {
-            padding: 0.75rem 1.5rem;
+            padding: 0.6rem 1.2rem;
             background: transparent;
             border: 1px solid var(--color-beige-300);
             border-radius: 8px;
             font-weight: 500;
+            font-size: 0.875rem;
             color: var(--color-gray-700);
             cursor: pointer;
             transition: all 0.2s ease;
-            margin-right: 0.5rem;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .tabs-container {
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            display: flex;
+            gap: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .tabs-container::-webkit-scrollbar {
+            display: none;
         }
 
         .tab-button:hover,
@@ -502,7 +517,7 @@
 
         <!-- Onglets de navigation -->
         <div class="mb-8 animate-fade-in">
-            <div class="flex flex-wrap gap-2">
+            <div class="tabs-container">
                 <button class="tab-button active" onclick="showTab('all')">📋 Toutes les collections</button>
                 <button class="tab-button" onclick="showTab('my')">👤 Mes collections</button>
                 <button class="tab-button" onclick="showTab('favorites')">❤️ Mes favoris</button>
@@ -512,22 +527,22 @@
         </div>
 
         <!-- Statistiques rapides -->
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8" id="stats-section">
-            <div class="text-center bg-white p-4 rounded-xl border border-beige-200">
-                <div class="text-2xl font-bold mb-1" style="color: var(--color-accent-primary);">42</div>
-                <div class="text-sm" style="color: var(--color-gray-500);">Collections disponibles</div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8" id="stats-section">
+            <div class="text-center bg-white p-3 rounded-xl border border-beige-200">
+                <div class="text-xl font-bold mb-1" style="color: var(--color-accent-primary);">42</div>
+                <div class="text-xs" style="color: var(--color-gray-500);">Collections disponibles</div>
             </div>
-            <div class="text-center bg-white p-4 rounded-xl border border-beige-200">
-                <div class="text-2xl font-bold mb-1" style="color: var(--color-accent-secondary);">8</div>
-                <div class="text-sm" style="color: var(--color-gray-500);">Mes collections</div>
+            <div class="text-center bg-white p-3 rounded-xl border border-beige-200">
+                <div class="text-xl font-bold mb-1" style="color: var(--color-accent-secondary);">8</div>
+                <div class="text-xs" style="color: var(--color-gray-500);">Mes collections</div>
             </div>
-            <div class="text-center bg-white p-4 rounded-xl border border-beige-200">
-                <div class="text-2xl font-bold mb-1" style="color: var(--color-accent-info);">156</div>
-                <div class="text-sm" style="color: var(--color-gray-500);">Ressources organisées</div>
+            <div class="text-center bg-white p-3 rounded-xl border border-beige-200">
+                <div class="text-xl font-bold mb-1" style="color: var(--color-accent-info);">156</div>
+                <div class="text-xs" style="color: var(--color-gray-500);">Ressources organisées</div>
             </div>
-            <div class="text-center bg-white p-4 rounded-xl border border-beige-200">
-                <div class="text-2xl font-bold mb-1" style="color: var(--color-accent-tertiary);">23</div>
-                <div class="text-sm" style="color: var(--color-gray-500);">Collections suivies</div>
+            <div class="text-center bg-white p-3 rounded-xl border border-beige-200">
+                <div class="text-xl font-bold mb-1" style="color: var(--color-accent-tertiary);">23</div>
+                <div class="text-xs" style="color: var(--color-gray-500);">Collections suivies</div>
             </div>
         </div>
 
